@@ -38,3 +38,6 @@ ibmcloud fn action get quarkustest1 --url
 to get the URL. If you build the example Quarkus app in this project, you can go to the URL that is returned by the above command, and append /hello and you'll see the result.
  
  
+docker build -t prpatel/quarkustest:11 .
+docker push prpatel/quarkustest:11
+ibmcloud fn action update quarkustest1 target/getting-started-1.0.0-SNAPSHOT-runner.jar --docker prpatel/quarkustest:11 --web true

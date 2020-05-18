@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8-openj9
+FROM adoptopenjdk/openjdk11-openj9
 
 ADD target/lib /app/lib
 #ADD quarkus-libs.jar /app/
